@@ -5,14 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой первый проект</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/reset.css">
 </head>
 <body>
-    <div class="promo">
-        <div class="promo-inner">
-            <h1 class="promo-ttl">Заголовок сайта</h1>
-            <p class="promo-slogan">Описание сайта, типа тут все самое офиггенное и опупенное!</p>
+    <header class="header">
+      <div class="header-inner">
+        <div class="header-flex">
+          <a href="#" class="logo">Butterfly</a>
+          <nav class="navigation">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a href="" class="menu-text">Каталог</a>
+              </li>
+              <li class="menu-item">
+                <a href="" class="menu-text">Отзывы</a>
+              </li>
+              <li class="menu-item">
+                <a href="" class="menu-text">Контакты</a>
+              </li>
+              <li class="menu-item">
+                <a href="" class="menu-text">FAQ</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-    </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="promo">
+        <div class="promo-fade">
+          <div class="promo-inner">
+            <h1 class="promo-title">Индивидуальный пошив<br> галсутков-бабочек</h1>
+            <a href="" class="btn">Заказать бабочку</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="example">
+        <div class="example-inner">
+          <h2 class="example-title">Наши работы</h2>
+          <div class="example-flex">
+            <div class="example-img" style="background-image: url('images/zoomed_bow_tie.jpg')">
+              <p class="example-text">Бабочка такая</p>
+            </div>
+            <div class="example-img" style="background-image: url('images/case_bow_tie.jpg')">
+              <p class="example-text">Бабочка растакая</p>
+            </div>
+            <div class="example-img" style="background-image: url('images/man_bow_tie.jpg')">
+              <p class="example-text">Бабочка сякая</p>
+            </div>
+            <div class="example-img" style="background-image: url('images/cat_bow_tie.jpg')">
+              <p class="example-text">Кривая</p>
+            </div>
+          </div>
+          <a href="#" class="btn">Все бабочки</a>
+        </div>
+      </section>
+
+      <section class="order">
+        <div class="order-inner">
+          <h2 class="order-title">Закажи пошив</h2>
+          <p class="order-text">
+            Заполните форму - наш мастер свяжется с вами,
+            согласует удобное время для встречи. На встрече он снимет мерки и
+            поможет обределиться с тканью.</p>
+          <div class="order-form">
+            <input type="text" class="user-name" placeholder="Введите ваше имя">
+            <input type="text" class="user-number" placeholder="Введите ваш номер">
+            <a href="#" class="btn">Заказать</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-flex">
+          <div class="footer-logo">
+            <a href="#" class="logo">Butterfly</a>
+          </div>
+          <a href="tel:+78128008080" class="hot-line">+7 812 800-80-80</a>
+          <ul class="social">
+            <li class="social-item">
+              <a href="#" class="social-logo" style="background-image: url('images/ic-insta.svg')"></a>
+            </li>
+            <li class="social-item">
+              <a href="#" class="social-logo" style="background-image: url('images/ic-fb.svg')"></a>
+            </li>
+            <li class="social-item">
+              <a href="#" class="social-logo" style="background-image: url('images/ic-tg.svg')"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <script src="scripts/script.js"></script>
 </body>

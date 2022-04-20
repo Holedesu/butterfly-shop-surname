@@ -1,0 +1,21 @@
+.order {
+  background-color: rgba(51, 51, 51, .1);
+  padding: 130px 0;
+}
+
+.order-inner {
+  @include inner;
+}
+
+.order-title {
+  @include title;
+}
+
+.order-text {
+  font-size: 28px;
+  line-height: 38px;
+  color: #333333;
+  margin: 37px 0 90px;
+}
+
+

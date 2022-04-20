@@ -1,0 +1,42 @@
+.header {
+  background-color: #333;
+}
+
+.header-inner {
+  @include inner;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+}
+
+.menu-item {
+  margin-right: 35px;
+}
+
+.menu-item:last-child{
+  margin-right: 0;
+}
+
+.menu-text {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FFF;
+  text-decoration: none;
+  padding: 33px 25px;
+
+}
+
+.menu-text:hover{
+  background-color: #FF2D2D;
+}
+

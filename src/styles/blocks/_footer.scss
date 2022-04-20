@@ -1,0 +1,39 @@
+.footer {
+  background-color: #333333;
+  padding: 31px 0;
+}
+
+.footer-inner{
+  @include inner;
+}
+
+.footer-flex {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-right: auto;
+}
+
+.hot-line{
+  text-decoration: none;
+  font-size: 28px;
+  line-height: 38px;
+  margin-right: 45px;
+  color: #FFFFFF;
+}
+
+.social{
+  display: flex;
+}
+
+.social-item {
+  margin-left: 15px;
+}
+
+.social-logo {
+  display: block;
+  height: 26px;
+  width: 26px;
+}
