@@ -15,22 +15,22 @@
 .example-flex {
   display: flex;
   justify-content: space-between;
+  padding: 0 0 120px;
 }
 
-.example-img {
-  height: 304px;
-  flex-basis: calc(25% - $gap);
-  background-size: cover;
-  margin-bottom: 120px;
-}
-
-.example-text {
-  font-size: 24px;
-  line-height: 33px;
-  color: #FFF;
-  padding: 15px 0;
-  background-color: rgba(0, 0, 0, 0.4);
+.example-figure {
+  object-fit: cover;
   position: relative;
-  margin-top: 240px;
-
 }
+
+.example-img-text {
+  background-color: rgba($dark, .4);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  color: #FFFFFF;
+}
+
+
