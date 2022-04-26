@@ -9,6 +9,7 @@
 
 .order-title {
   @include title;
+  text-align: center;
 }
 
 .order-text {
@@ -16,6 +17,7 @@
   line-height: 38px;
   color: #333333;
   margin: 37px 0 90px;
+  text-align: center;
 }
 
 form {
