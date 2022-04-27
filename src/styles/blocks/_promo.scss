@@ -9,6 +9,18 @@
 .promo-fade {
   background-color: rgba(51, 51, 51, 0.4);
   padding: 200px 0 214px;
+
+  @media (max-width: $tablet-max) {
+    padding: 180px 0 190px;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 110px 0 100px;
+  }
+}
+
+.promo-inner{
+  @include inner;
 }
 
 .promo-title {
@@ -17,4 +29,15 @@
   line-height: 98px;
   color: #FFF;
   margin-bottom: 100px;
+
+  @media (max-width: $tablet-max) {
+    font-size: 54px;
+    line-height: 74px;
+  }
+
+  @media (max-width: $mobile-max) {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 80px;
+  }
 }

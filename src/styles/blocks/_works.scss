@@ -2,6 +2,14 @@
   background-color: #fff;
   padding: 130px 0;
   text-align: center;
+
+  @media (max-width: $tablet-max) {
+    padding: 120px 0;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 90px 0;
+  }
 }
 
 .example-inner {
@@ -11,17 +19,90 @@
 .example-title {
   @include title;
   margin-bottom: 97px;
+
+  @media (max-width: $tablet-max) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 40px;
+  }
 }
 
 .example-flex {
   display: flex;
   justify-content: space-between;
-  padding: 0 0 120px;
+  margin-bottom: 120px;
+
+  @media (max-width: $tablet-max) {
+    display: grid;
+    grid-template-columns: 1fr 364px 364px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin-bottom: 80px;
+
+    .grid-zoom-tie {
+      grid-column: 2/4;
+      grid-row: 1/2;
+      z-index: 2;
+    }
+    .grid-case-tie {
+      grid-column: 3/4;
+      grid-row: 1/2;
+      z-index: 2;
+    }
+    .grid-man-tie {
+      grid-column: 2/4;
+      grid-row: 2/2;
+      z-index: 2;
+    }
+    .grid-cat-tie{
+      grid-column: 3/4;
+      grid-row: 2/2;
+      z-index: 2;
+    }
+  }
+
+  @media (max-width: $mobile-max) {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 60px;
+  }
 }
 
 .example-figure {
-  object-fit: cover;
   position: relative;
+
+  @media (max-width: $tablet-max) {
+    height: 364px;
+    width: 364px;
+  }
+
+  @media (max-width: $mobile-max) {
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  img {
+    @media (max-width: $tablet-max) {
+      height: 364px;
+      width: 364px;
+    }
+
+    @media (max-width: $mobile-max) {
+      height: 300px;
+      width: 300px;
+    }
+  }
+
+  a {
+    @media (max-width: $mobile-max) {
+      margin-top: 40px;
+    }
+  }
 }
 
 .example-img-text {

@@ -2,13 +2,20 @@
   display: inline-block;
   font-size: 42px;
   line-height: 43px;
-  width: 33%;
+  width: 497px;
   background-color: #FF2D2D;
   color: #FFF;
   padding: 30px 0;
   border-radius: 6px;
   text-decoration: none;
   text-align: center;
+
+  @media (max-width: $mobile-max) {
+    font-size: 24px;
+    line-height: 33px;
+    width: 278px;
+    text-align: center;
+  }
 }
 
 .btn-transparent {
@@ -18,4 +25,9 @@
   line-height: 34px;
   border: 0;
   margin-top: 35px;
+
+  @media (max-width: $tablet-max) {
+    width: 100%;
+    flex-basis: 100%;
+  }
 }
